@@ -1,7 +1,6 @@
 package at.htlklu;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -11,6 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
+import static java.awt.Font.*;
 
 public class JPanelSnake extends JPanel implements ActionListener {
 
@@ -84,7 +85,9 @@ public class JPanelSnake extends JPanel implements ActionListener {
 
 		} else {
 			timer.stop(); 	// TIMER STOPPEN
-		
+
+			g.setColor(Color.BLUE);
+			g.setFont(new Font("sans-serif", Font.ITALIC, 20));
 			g.drawString("GAME OVER...", this.getHeight() / 2, this.getWidth() / 3);
 
 		}
