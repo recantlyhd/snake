@@ -78,7 +78,7 @@ public class Snake implements Moveable, Drawable {
 		g.fillOval(points[0].x, points[0].y, this.size, this.size);
 		
 		// Körper
-		g.setColor(Color.GREEN);
+		g.setColor(Color.PINK);
 		for (int i = 1; i < parts; i++) {
 			g.fillOval(points[i].x, points[i].y, this.size, this.size);
 		}
