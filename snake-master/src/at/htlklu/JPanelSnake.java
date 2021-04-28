@@ -68,6 +68,9 @@ public class JPanelSnake extends JPanel implements ActionListener {
 		if ((key == KeyEvent.VK_DOWN) && (dir != Direction.NORTH)) {
 			dir = Direction.SOUTH;
 		}
+		if (!isRunning && key == KeyEvent.VK_N){
+			restartGame();
+		}
 		snake.setDirection(dir);
 	}
 
@@ -115,5 +118,9 @@ public class JPanelSnake extends JPanel implements ActionListener {
 
 		return false;
 	}
-
+	private void restartGame(){
+		isRunning = true;
+		snake = new Snake();
+		timer.start();
+	}
 }
