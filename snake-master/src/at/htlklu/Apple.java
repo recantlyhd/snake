@@ -6,7 +6,7 @@ import java.awt.Graphics;
 public class Apple extends Food {
 
 	public Apple() {
-		super.color = Color.RED;
+		super.color = Color.GREEN;
 		super.bonusPoints = 5;
 	}
 	
