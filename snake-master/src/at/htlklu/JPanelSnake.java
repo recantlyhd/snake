@@ -46,7 +46,7 @@ public class JPanelSnake extends JPanel implements ActionListener {
 				thisKeyPressed(e);
 			}
 		});
-		setBackground(Color.DARK_GRAY);
+		setBackground(Color.BLACK);
 	}
 
 	protected void thisKeyPressed(KeyEvent ke) {
