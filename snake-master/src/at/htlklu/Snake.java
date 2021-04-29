@@ -74,7 +74,7 @@ public class Snake implements Moveable, Drawable {
 	@Override
 	public void draw(Graphics g) {
 		// Kopf
-		g.setColor(Color.RED);
+		g.setColor(Color.WHITE);
 		g.fillOval(points[0].x, points[0].y, this.size, this.size);
 		
 		// Körper
